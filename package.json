@@ -1,0 +1,36 @@
+{
+    "name": "app-service-hello-world",
+    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon",
+        "test": "mocha",
+        "build:css": "npx tailwindcss build ./public/css/main.css -o ./public/css/style.css"
+    },
+    "dependencies": {
+        "@primer/octicons": "^11.1.0",
+        "autoprefixer": "^10.0.4",
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "mocha": "^8.2.1",
+        "nodemon": "^2.0.2",
+        "pg": "^7.18.2",
+        "postcss": "^8.1.10",
+        "tailwindcss": "^2.0.1"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^7.1.0"
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "env": {
+            "node": true,
+            "es6": true
+        }
+    }
+}

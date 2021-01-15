@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.haikus {
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: .8px;
+    white-space: pre-wrap;
+}
