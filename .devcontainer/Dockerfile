@@ -24,6 +24,8 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
         && chown -R $USER_UID:$USER_GID /home/$USERNAME; \
     fi
 
+RUN (curl -Ls https://cli.doppler.com/install.sh || wget -qO- https://cli.doppler.com/install.sh) | sh
+
 # *************************************************************
 # * Uncomment this section to use RUN instructions to install *
 # * any needed dependencies after executing "apt-get update". *
