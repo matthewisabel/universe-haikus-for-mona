@@ -16,14 +16,15 @@
     },
 
     // Specifies a command that should be run after the container has been created.
-    "postCreateCommand": "npm install",
+    "postCreateCommand": "chown -R node:node . && npm install",
 
     // Add the IDs of extensions you want installed when the container is created in the array below.
     "extensions": [
-        "dbaeumer.vscode-eslint",
-        "mtxr.sqltools",
-        "mtxr.sqltools-driver-pg"
-    ],
+		"dbaeumer.vscode-eslint",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-pg",
+		"ms-ossdata.vscode-postgresql"
+	],
 
 
 }
