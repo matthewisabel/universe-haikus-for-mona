@@ -40,4 +40,4 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
 # ENV DEBIAN_FRONTEND=dialog
 
 # Uncomment to default to non-root user
-# USER $USER_UID
+USER $USER_UID
