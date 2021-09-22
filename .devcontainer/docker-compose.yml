@@ -14,9 +14,9 @@ services:
       NODE_ENV: development
       PORT: 3000
       HOST: localhost
-    working_dir: /workspace
+    working_dir: /workspaces
     volumes:
-      - ..:/workspace:cached
+      - ..:/workspaces:cached
     
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
