@@ -16,7 +16,7 @@
     },
 
     // Specifies a command that should be run after the container has been created.
-    "postCreateCommand": "chown -R node:node /workspace && npm install",
+    "postCreateCommand": "sudo chown -R node:node /workspace && npm install",
 
     // Add the IDs of extensions you want installed when the container is created in the array below.
     "extensions": [
