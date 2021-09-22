@@ -23,6 +23,13 @@ app.get('/', (req, res) => {
   });
 });
 
+// list of images for the haikus
+app.get('/images', (req, res) => {
+  pool.query('SELECT * FROM haikus ORDER BY id', (err, image) => {
+    res.render('images', {images: image.rows});
+  });
+});
+
 app.post('/heart', (req, res) => {
   pool.query('UPDATE haikus SET hearts = hearts + 1 WHERE id = $1', [req.body.id], () => {
     res.send('Success');
