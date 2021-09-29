@@ -29,11 +29,5 @@ app.post('/heart', (req, res) => {
   });
 });
 
-app.get('/fetch', (req, res) => {
-  pool.query(`SELECT * FROM haikus ORDER BY id ${req.query.id}`, (err, haikus) => {
-    res.render('index', {haikus: haikus.rows});
-  });
-});
-
 app.listen(port);
 console.log(`Server running on http://localhost:${port}`)
