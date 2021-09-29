@@ -12,6 +12,13 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js"
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
         }
     ]
 }
